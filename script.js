@@ -11,7 +11,7 @@
     n.appendChild(w);
   });
   // Typewriter
-  var words=['stay lowkey.','keep your experiences safe.','am a CS student','make useful products.','work on cybersecurity'],wi=0,ci=0,del=false,t=document.getElementById('type');
+  var words=['stay lowkey.','keep your experiences safe.','am a CS student.','make useful products.','work on cybersecurity'],wi=0,ci=0,del=false,t=document.getElementById('type');
   (function tick(){
     var w=words[wi];ci+=del?-1:1;t.textContent=w.slice(0,ci);
     var d=del?35:75;
