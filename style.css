@@ -56,7 +56,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--c);outline-offset:2
 
 /* hero */
 #home{display:flex;flex-direction:column;justify-content:center}
-.hello{color:var(--c);margin:0 0 14px}
+.hello{color:var(--c);margin:0 0 14px;font-size:32px;}
 h1{font-size:clamp(2.6rem,8.5vw,6.4rem)}
 .w{display:inline-block;white-space:nowrap;margin-right:.28em}
 h1 .l{display:inline-block;opacity:0;transform:translateY(40px);filter:blur(12px);animation:in .9s cubic-bezier(.2,.8,.2,1) forwards}
