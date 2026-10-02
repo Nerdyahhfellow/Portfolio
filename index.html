@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smayan G Shetty — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="rail" aria-label="Page progress"><div id="railfill"></div></div>
+<div class="blobs"><i></i><i></i><i></i></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" id="glow"></div>
+
+<nav aria-label="Sections">
+  <a href="#home" class="on"><kbd>1</kbd>Home</a>
+  <a href="#projects"><kbd>2</kbd>Projects</a>
+  <a href="#about"><kbd>3</kbd>About</a>
+  <a href="#skills"><kbd>4</kbd>Skills</a>
+  <a href="#contact"><kbd>5</kbd>Contact</a>
+  <button id="theme" aria-label="Toggle light or dark theme">◐</button>
+</nav>
+
+<section id="home">
+  <p class="hello">Hi, I'm</p>
+  <h1 id="name" aria-label="Smayan G Shetty"></h1>
+  <p class="role">I design and build <b id="type"></b></p>
+  <div class="btns">
+    <a class="btn main" href="#projects">See my projects</a>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="rv">Projects</h2>
+  <div class="grid">
+    <article class="card tilt rv"><div class="thumb" style="background-image:linear-gradient(120deg,var(--a),var(--b),var(--a))"></div>
+      <h3>Orbit Dashboard</h3><p>Analytics app that cut weekly reporting time for a 40-person team by half.</p>
+      <div class="tags"><em>React</em><em>D3</em><em>Figma</em></div></article>
+    <article class="card tilt rv"><div class="thumb" style="background-image:linear-gradient(120deg,var(--b),var(--bg),var(--b))"></div>
+      <h3>Lumen Store</h3><p>A fast, accessible online shop with a one-page checkout.</p>
+      <div class="tags"><em>Next.js</em><em>Stripe</em><em>CSS</em></div></article>
+    <article class="card tilt rv"><div class="thumb" style="background-image:linear-gradient(120deg,var(--a),var(--bg),var(--a))"></div>
+      <h3>Trailmate</h3><p>Mobile app that plans hikes around weather and daylight.</p>
+      <div class="tags"><em>React Native</em><em>Maps</em><em>UX</em></div></article>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="rv">About me</h2>
+  <div class="card rv">
+    <p>I'm a designer-developer with five years of experience turning rough ideas into polished products. I care about clear interfaces, smooth motion and code that stays easy to change.</p>
+    <p style="margin-top:14px">Outside of work I take film photos and bake bread. Replace this text with your own story.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="rv">Skills</h2>
+  <div class="grid">
+    <div class="card rv"><h3>Front-end</h3><p>Building fast, accessible interfaces.</p>
+      <div class="tags"><em>JavaScript</em><em>TypeScript</em><em>React</em><em>Next.js</em><em>CSS</em></div></div>
+    <div class="card rv"><h3>Design</h3><p>Turning ideas into clear layouts and systems.</p>
+      <div class="tags"><em>Figma</em><em>Typography</em><em>Design systems</em><em>Prototyping</em></div></div>
+    <div class="card rv"><h3>Motion</h3><p>Animation that guides attention without getting in the way.</p>
+      <div class="tags"><em>CSS animation</em><em>GSAP</em><em>Framer Motion</em></div></div>
+    <div class="card rv"><h3>Back-end</h3><p>Simple APIs and data behind the interface.</p>
+      <div class="tags"><em>Node.js</em><em>REST</em><em>PostgreSQL</em></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="rv">Let's work together</h2>
+  <form class="rv" id="form">
+    <input required placeholder="Your name" aria-label="Your name">
+    <input required type="email" placeholder="Your email" aria-label="Your email">
+    <textarea required rows="4" placeholder="Tell me about your project" aria-label="Message"></textarea>
+    <button class="btn main" type="submit">Send message</button>
+    <p id="sent" role="status"></p>
+  </form>
+  <footer>© 2026 Smayan G Shetty · Press 1–5 to jump between sections</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
