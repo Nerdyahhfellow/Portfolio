@@ -11,7 +11,7 @@
     n.appendChild(w);
   });
   // Typewriter
-  var words=['stay lowkey.','keep your experiences safe.','am a CS student.','make useful products.','work on cybersecurity'],wi=0,ci=0,del=false,t=document.getElementById('type');
+  var words=['stay lowkey.','keep your experiences safe.','am a CS student.','make useful products.','work on cybersecurity.'],wi=0,ci=0,del=false,t=document.getElementById('type');
   (function tick(){
     var w=words[wi];ci+=del?-1:1;t.textContent=w.slice(0,ci);
     var d=del?35:75;
@@ -64,16 +64,6 @@
     if(/INPUT|TEXTAREA/.test(document.activeElement.tagName)||e.ctrlKey||e.metaKey||e.altKey)return;
     var i=parseInt(e.key,10);
     if(i>=1&&i<=secs.length)secs[i-1].scrollIntoView({behavior:'smooth'});
-  });
-  // Theme toggle
-  var root=document.documentElement;
-  document.getElementById('theme').onclick=function(){
-    var t=root.getAttribute('data-theme'),dark=t?t==='dark':!matchMedia('(prefers-color-scheme:light)').matches;
-    root.setAttribute('data-theme',dark?'light':'dark');
-  };
-  // Demo form
-  document.getElementById('form').addEventListener('submit',function(e){
-    e.preventDefault();document.getElementById('sent').textContent='Thanks! This demo form does not send anything yet.';
   });
 })();
 

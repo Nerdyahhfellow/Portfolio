@@ -21,11 +21,10 @@
   <a href="#about"><kbd>3</kbd>About</a>
   <a href="#skills"><kbd>4</kbd>Skills</a>
   <a href="#contact"><kbd>5</kbd>Contact</a>
-  <button id="theme" aria-label="Toggle light or dark theme">◐</button>
 </nav>
 
 <section id="home">
-  <p class="hello">Hi, I'm</p>
+  <p class="hello"><span style="font-size:22px;">Hi</span>i'm</p>
   <h1 id="name" aria-label="Smayan G Shetty"></h1>
   <p class="role">I <b id="type"></b></p>
   <div class="btns">
@@ -36,40 +35,61 @@
 
 <section id="projects">
   <h2 class="rv">Projects</h2>
+  <p class="sub rv">Cybersecurity and networking builds are on the way.</p>
   <div class="grid">
-    <article class="card tilt rv"><div class="thumb"></div>
-      <h3><Nothing for now></Nothing></h3><p>Nothing to see for now</p>
+    <article class="card pcard tilt rv"><div class="thumb">01</div>
+      <span class="badge">A group project</span>
+      <h3>Shield Browser Extension</h3><p>Preventing erraneous links from attaking you.</p>
+      <div class="tags"><em>Checking links</em><em>Traffic monitoring</em></div></article>
+    <article class="card pcard tilt rv"><div class="thumb">02</div>
+      <span class="badge">Hackathon project</span>
+      <h3>C2 detection and analysis</h3><p>Test apks safely before even running them.</p>
+      <div class="tags"><em>APK security</em><em>Simulation</em></div></article>
+    <article class="card pcard tilt rv"><div class="thumb">03</div>
+      <span class="badge">Coming soon</span>
+      <h3>Something niche</h3><p>A project ........ Stay tuned.</p>
+      <div class="tags"><em>TBA</em></div></article>
   </div>
+  <p class="note rv">New projects will land here as they ship.</p>
 </section>
 
 <section id="about">
   <h2 class="rv">About me</h2>
-  <div class="card rv">
-    <p>I'm Smayan, Just a dude who's into working on serious stuff and mostly Cybersecurity related projects.Stay tuned to see niche projects on various fields.</p>
-    <p style="margin-top:14px">Outside of projects I take photos and eat bread.</p>
+  <div class="about">
+    <div class="card rv">
+      <p>I'm Smayan, just a dude who's into working on serious stuff, mostly cybersecurity related projects. Stay tuned to see niche projects in various fields.</p>
+      <p style="margin-top:14px">Outside of projects I take photos and eat bread.</p>
+    </div>
+    <div class="card rv">
+      <div class="fact"><span>Focus</span><b>Cybersecurity</b></div>
+      <div class="fact"><span>Studying</span><b>Computer Science</b></div>
+      <div class="fact"><span>Off duty</span><b>Photos &amp; bread</b></div>
+    </div>
   </div>
 </section>
 
 <section id="skills">
   <h2 class="rv">Skills</h2>
   <div class="grid">
-    <div class="card rv"><h3>Front-end</h3><p>Building fast, beautiful interfaces.</p>
+    <div class="card lift rv"><span class="idx">01</span><h3>Front-end</h3><p>Building fast, beautiful interfaces.</p>
       <div class="tags"><em>JavaScript</em><em>TypeScript</em><em>React</em><em>Next.js</em><em>CSS</em></div></div>
-    <div class="card rv"><h3>Back-end</h3><p>Data behind the interface.</p>
-      <div class="tags"><em>Node.js</em><em>sql</em><em>PostgreSQL</em></div></div>
-          <div class="card rv"><h3>Cybersecurity</h3><p>Keeping stuff safe.</p>
-      <div class="tags"><em>Mininet</em><em>Traffic monitoring</em><em>Firewall</em><em>Siumlation</em></div></div>
+    <div class="card lift rv"><span class="idx">02</span><h3>Back-end</h3><p>Data behind the interface.</p>
+      <div class="tags"><em>Node.js</em><em>SQL</em><em>PostgreSQL</em></div></div>
+    <div class="card lift rv"><span class="idx">03</span><h3>Cybersecurity</h3><p>Keeping stuff safe.</p>
+      <div class="tags"><em>Mininet</em><em>Traffic monitoring</em><em>Firewall</em><em>Simulation</em></div></div>
   </div>
 </section>
 
 <section id="contact">
   <h2 class="rv">Let's work together</h2>
-  <div class="card rv">
-    <p style="font-weight: bold;">Details and socials</p>
-    <p style="font-weight: bold;">Instagram:</p>
-    <p style="font-weight: bold;">Email me at:</p>
-    <p style="font-weight: bold;">Phone no:</p>
+  <p class="sub rv">Got an idea, a project or a question? Reach out any way you like.</p>
+  <div class="grid">
+    <!-- TODO: replace the placeholder values and hrefs below with your real details -->
+    <a class="card cc lift rv" href="https://www.instagram.com/smayan__shetty/?hl=en"><small>Instagram</small><strong>@smayan_shetty</strong></a>
+    <a class="card cc lift rv" href="mailto:smayanshetty09"><small>Email</small><strong>smayanshetty09@gmail.com</strong></a>
+    <a class="card cc lift rv" href="tel:+000000000000"><small>Phone</small><strong>9019113600</strong></a>
   </div>
+  <footer>© 2026 Smayan G Shetty</footer>
 </section>
 
 <script src="script.js"></script>
